@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #f0f0f0;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+nav a {
+      background-color: #1a1a2e
+
+;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 25px; 
+      flex-wrap: nowrap; 
+      white-space: nowrap; 
+      overflow-x: auto;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s ease;
+      white-space: nowrap; 
+      padding: 5px 10px;
+      border-radius: 4px;
+      flex-shrink: 0; 
+      }
+
+    nav a:hover {
+      color: #ffdd57;
+      background-color: rgba(255, 221, 87, 0.2);
+    }
+}
+
+nav a:hover {
+  color: #007BFF;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.shoan {
+  background: white;
+  box-shadow: 0 0 5px #ccc;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.shoan-img img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 25px;
+  border: 2px solid #007BFF;
+}
+
+.info button {
+  background-color: #007BFF;
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.info button:hover {
+  background-color: #0056b3;
+}

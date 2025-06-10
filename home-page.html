@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Friend Circle</title>
+  <link rel="stylesheet" href="home-page.css">
+</head>
+<body>
+
+  <nav>
+    <a href="home-page.html">Home</a>
+    <a href="index.html">My Friends</a>
+    <a href="About-me.html">My info</a>
+  </nav>
+
+  <div class="pragraph">
+    <h1>Our Friend</h1>
+    <p id="typewriter"></p>
+  </div>
+
+  <!-- Friend Cards -->
+  <div class="shoan">
+    <div class="border">
+      <div class="text">
+        <a href="shoan.html">Shoan</a>
+        <pre>I'm Shoan, I love football and Free Fire. Click my name to see more.</pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="shoan">
+    <div class="border">
+      <div class="text">
+        <a href="fishan.html">Fishan</a>
+        <pre>I'm Fishan, I love football and Free Fire. Click my name to see more.</pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="shoan">
+    <div class="border">
+      <div class="text">
+        <a href="sameul.html">Sameul</a>
+        <pre>I'm Sameul, I love football and Free Fire. Click my name to see more.</pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="shoan">
+    <div class="border">
+      <div class="text">
+        <a href="badhon.html">Badhon</a>
+        <pre>I'm Badhon, I love football and Free Fire. Click my name to see more.</pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="shoan">
+    <div class="border">
+      <div class="text">
+        <a href="me.html">Rakib</a>
+        <pre>I'm Rakib, I love coding and I created this site. Click my name to see more.</pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="shoan">
+    <div class="border">
+      <div class="text">
+        <a href="robi.html">Robi</a>
+        <pre>I'm Robi, I love football and Free Fire. Click my name to see more.</pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="shoan">
+    <div class="border">
+      <div class="text">
+        <a href="opu.html">Opu</a>
+        <pre>I'm Opu, I love football and Free Fire. Click my name to see more.</pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="shoan">
+    <div class="border">
+      <div class="text">
+        <a href="shagor.html">Shagor</a>
+        <pre>I'm Shagor, I love football and Free Fire. Click my name to see more.</pre>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const text = `My Friends
+I have some amazing friends in my life.
+They are always there to support and cheer me up.
+We laugh together, share secrets, and create unforgettable memories.
+No matter what happens, I know they will always stand by my side.
+Life feels easier and happier when my friends are around.
+They are not just friends, they are like family to me.`;
+
+    let i = 0;
+    function typeWriter() {
+      if (i < text.length) {
+        document.getElementById("typewriter").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 30);
+      }
+    }
+    window.onload = typeWriter;
+  </script>
+
+  <footer>
+    <p class="footer">&copy; 2025 Rakib. All rights reserved. fb: Swe Rakib, mobile: 01828315879</p>
+  </footer>
+
+</body>
+</html>

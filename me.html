@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>our friend circle</title>
+  <link rel="stylesheet" href="me.css" />
+</head>
+<body>
+  <nav>
+    <a href="home-page.html">Home</a>
+    <a href="index.html">My Friends</a>
+    <a href="About-me.html">My info</a>
+  </nav>
+
+  <div class="shoan">
+    <div class="shoan-img">
+      <img src="me.jpg" id="shoan-img" alt="Rakib Hossen" />
+    </div>
+
+    <div class="links">
+      <a href="https://www.facebook.com/share/1Exz6HnaLB/">
+        <button>Facebook ID ></button>
+      </a>
+    </div>
+
+    <div class="typing-container">
+      <p>I love coding because it helps me forget all my worries and makes me feel powerful and creative.</p>
+      <p>I enjoy learning different programming languages like Java, C, Python, and JavaScript.</p>
+      <p>Right now, I'm focused on web development and have already built many exciting projects.</p>
+      <p>My dream is to become a skilled software engineer and make a difference through technology.</p>
+      <p>I also love participating in scout activities and spending fun time with my friends.</p>
+      <p>I pray regularly and want to stay connected to my faith while chasing my dreams.</p>
+    </div>
+
+    <div class="contact">
+      <p>Name: Rakib Hossen</p>
+      <p>Number: +88 01828315879</p>
+      <p>WhatsApp: +88 01828315879</p>
+      <p>Email: rakibshek066@gmail.com</p>
+    </div>
+
+    <div class="input">
+      <input type="text" class="int" id="int" placeholder="text me" autocomplete="off" />
+      <button class="send" id="send">Send</button>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("send").addEventListener("click", function () {
+      const message = document.getElementById("int").value.trim();
+      if (!message) {
+        alert("মেসেজ লিখো আগে!");
+        return;
+      }
+      // প্লাস ছাড়া দেশ কোড+নাম্বার দিতে হবে
+      const phoneNumber = "8801828315879";
+      const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+      window.open(url, "_blank");
+    });
+  </script>
+</body>
+</html>

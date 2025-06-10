@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>our friend circle</title>
+  <link rel="stylesheet" href="fishan.css" />
+</head>
+<body>
+  <nav>
+    <a href="home-page.html">Home</a>
+    <a href="index.html">My Friends</a>
+    <a href="About-me.html">My info</a>
+  </nav>
+
+  <div class="shoan">
+    <div class="shoan-img">
+      <img src="opu.jpg" id="shoan-img" alt="Opu" />
+    </div>
+
+    <div class="links">
+      <a href="https://www.facebook.com/share/1BDxTiqo5A/">
+        <button>Facebook ID ></button>
+      </a>
+    </div>
+
+    <div class="typing-container">
+      <p>
+        My name is Opu.I love football and Free Fire. I am fast and skilled on
+        the football field. In Free Fire, I always try my best to win. Playing
+        both keeps me happy and active.
+      </p>
+    </div>
+
+    <div class="contact">
+      <p>Name: Opu</p>
+      <p>Number: +88 01965081927</p>
+      <p>WhatsApp: +88 01965081927</p>
+      <p>Email: xxxxxxxxx@gmail.com</p>
+    </div>
+
+    <div class="input">
+      <input type="text" class="int" id="int" placeholder="text me" />
+      <button class="send" id="send">Send</button>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("send").addEventListener("click", function () {
+      const message = document.getElementById("int").value.trim();
+      if (!message) {
+        alert("মেসেজ লিখো আগে!");
+        return;
+      }
+      // country code + number, no spaces, plus, dash
+      const phoneNumber = "8801965081927";
+      const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+        message
+      )}`;
+      window.open(url, "_blank");
+    });
+  </script>
+</body>
+</html>

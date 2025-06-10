@@ -1,0 +1,98 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #DCDCDC;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+  background-color: #1a1a2e;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  white-space: nowrap;
+  padding: 5px 15px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+nav a:hover {
+  color: #ffdd57;
+  background-color: rgba(255, 221, 87, 0.2);
+}
+
+/* About Me Section */
+.myself {
+  max-width: 700px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 30px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.myself h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: 700;
+  color: #222;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.img-fluid {
+  border-radius: 50%;
+  border: 5px solid darkblue;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.pra p {
+  font-size: 1.1rem;
+  text-align: justify;
+  letter-spacing: 0.5px;
+}
+
+/* Personal Info Section */
+.my {
+  max-width: 700px;
+  margin: 30px auto 60px auto;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  padding: 20px 25px;
+  font-size: 1rem;
+  color: #222;
+}
+
+.my-info strong {
+  display: inline-block;
+  width: 130px;
+}

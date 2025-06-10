@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  background-color: #DCDCDC;
+  
+}
+
+
+nav {
+      background-color: #1a1a2e
+
+;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 25px; 
+      flex-wrap: nowrap; 
+      white-space: nowrap; 
+      overflow-x: auto;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s ease;
+      white-space: nowrap; 
+      padding: 5px 10px;
+      border-radius: 4px;
+      flex-shrink: 0; 
+      }
+
+    nav a:hover {
+      color: #ffdd57;
+      background-color: rgba(255, 221, 87, 0.2);
+    }
+
+.shoan {
+  margin-top: 30px;
+  margin-left: 50px;
+  height: 300px;
+  width: 360px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+#shoan-img {
+  margin-top: 30px;
+  height: 280px;
+  width: 300px;
+}
+.links{
+  margin-top: 30px;
+}
+
+button {
+  background-color: #1877F2; 
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  animation: pulseGlow 1.5s infinite;
+  box-shadow: 0 0 20px #1877F2, 0 0 40px #1877F2;
+  transition: transform 0.3s ease-in-out;
+}
+
+.facebook-button:hover {
+  transform: scale(1.08);
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 10px #1877F2, 0 0 20px #1877F2;
+  }
+  50% {
+    box-shadow: 0 0 25px #1877F2, 0 0 50px #1877F2;
+  }
+  100% {
+    box-shadow: 0 0 10px #1877F2, 0 0 20px #1877F2;
+  }
+}
+
+p {
+  margin-top: 30px;
+  width: 0;
+  overflow: hidden;
+  border-right: 2px solid black;
+  white-space: normal;  /* মাল্টিলাইন টেক্সটের জন্য */
+  animation: typing 4s steps(40, end) forwards;
+  font-family: monospace;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+
+
+.int{
+  margin-top: 30px;
+  height: 100px;
+  width: 300px;
+  border-radius: 15px;
+  font-size: 20px;
+}
+.send{
+  margin-top: 30px;
+}
+
+

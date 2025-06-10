@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>our friend circle</title>
+  <link rel="stylesheet" href="shoan.css" />
+</head>
+<body>
+  <nav>
+    <a href="home-page.html">Home</a>
+    <a href="index.html">My Friends</a>
+    <a href="About-me.html">My info</a>
+  </nav>
+
+  <div class="shoan">
+    <div class="shoan-img">
+      <img src="shoan.jpg" id="shoan-img" alt="Shoan Image" />
+    </div>
+
+    <div class="links">
+      <a href="https://www.facebook.com/share/1Hj8Apdbka/">
+        <button>Facebook ID ></button>
+      </a>
+    </div>
+
+    <div class="typing-container">
+      <p>
+        My name is Sohan. I love football and Free Fire.<br />
+        I am fast and skilled on the football field.<br />
+        In Free Fire, I always try my best to win.<br />
+        Playing both keeps me happy and active.
+      </p>
+    </div>
+
+    <div class="contact">
+      <p>Name: Shoan</p>
+      <p>Number: +880 1885-581204</p>
+      <p>WhatsApp: +880 1885-581204</p>
+      <p>Email: attitudegirlnotallaw@gmail.com</p>
+    </div>
+
+    <div class="input">
+      <input
+        type="text"
+        class="int"
+        id="int"
+        placeholder="text me"
+        autocomplete="off"
+      />
+      <button class="send" id="send">Send</button>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("send").addEventListener("click", function () {
+      const message = document.getElementById("int").value.trim();
+      if (!message) {
+        alert("মেসেজ লিখো আগে!");
+        return;
+      }
+      const phoneNumber = "8801885581204";
+      const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+        message
+      )}`;
+      window.open(url, "_blank");
+    });
+  </script>
+</body>
+</html>
